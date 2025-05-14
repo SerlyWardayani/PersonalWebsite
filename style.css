@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #78abd7;
     color: white;
     padding: 15px;
 }
@@ -27,24 +27,31 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .nav-links li {
     margin: 0 15px;
+    display: inline-block;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: rgb(28, 51, 220); 
 }
 
 .section {
     padding: 50px 20px;
 }
-
 .dark {
-    background-color: #222;
+    background-color: #78abd7;
     color: white;
 }
 
@@ -57,12 +64,36 @@ nav {
 .portfolio-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .portfolio-item img {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.portfolio-desain img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-survices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.portfolio-2D img {
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -72,9 +103,7 @@ form {
     max-width: 400px;
     margin: auto;
 }
-
-
-
+ 
 button {
     background: #333;
     color: white;
