@@ -56,7 +56,7 @@ nav {
 }
 
 .profile-img {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
     margin: 20px 0;
 }
@@ -65,35 +65,39 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 30px;
 }
 
 .portfolio-item img {
     width: 300px;
-    height: 600px;
+    height: 300px;
     object-fit: cover;
 }
 
 .portfolio-desain img {
     width: 300px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
+    margin: 30px;
 }
 
 .portfolio-survices {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 30px;
 }
 
 .portfolio-content {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 30px;
 }
 
 .portfolio-2D img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -111,3 +115,21 @@ button {
     border: none;
     cursor: pointer;
 }
+
+  .lightbox {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  }

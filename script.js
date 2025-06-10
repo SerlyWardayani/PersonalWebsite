@@ -7,3 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		});
 	});
 });
+
+function openLightbox(imgSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = imgSrc;
+    lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
